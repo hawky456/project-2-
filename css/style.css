@@ -53,7 +53,7 @@ background-color: #D3D3D3;
 }
 .main-nav {
 	margin-top: 5px;
-
+list-style-type: none;
 
 }
 
@@ -103,9 +103,6 @@ background-color: #D3D3D3;
 	padding-right: 1em;
 	padding-left: 1em;
 }
-.container2{
-	display:none;
-}
 
 .main-footer {
 	background: #d9e4ea;
@@ -114,6 +111,7 @@ background-color: #D3D3D3;
 }
 .main-nav2{
 	float:right;
+	display: none;
 }
 
 .main-nav2 li{
@@ -125,8 +123,14 @@ margin-top: 35px;
 }
 .name2{
 	float: left;
-}
 
+}
+.back{
+	display: inline-block;
+float:right;
+	margin-right: 20px;
+
+}
 
 
 /* ---- Page Elements ---- */
@@ -140,9 +144,13 @@ margin-top: 35px;
 /* =================================
   Media Queries
 ==================================== */
-@media (min-width: 320px) {
+@media (max-width: 320px) {
+	.main-nav{
+	margin-right: 10%;
+	}
 	.main-nav li{
 		background-color: white;
+
 		margin: 1em;
 	}
 
@@ -152,8 +160,8 @@ margin-left: auto;
 margin-right: auto;
 
 }
-.tagline{
-
+h1{
+	font-size:1em;
 }
 }
 @media (min-width: 768px) {
@@ -201,9 +209,10 @@ background-color: #D3D3D3;
 		max-height: 50%;
 
 	}
-	.container2{
+	.main-nav2{
 		display:block;
 	}
+	.back{ display: none;}
 
 
 	/* ---- Float clearfix ---- */
@@ -249,5 +258,7 @@ background-color:#D3D3D3;
 		width: 33.3%;
 
 	}
-
+.back{
+	display: none;
+}
 }
